@@ -14,7 +14,7 @@
             <objects>
                 <tableViewController id="eKr-dL-8yr" userLabel="Feed View Controller" customClass="FeedViewController" customModule="FoodarFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="320" sectionHeaderHeight="28" sectionFooterHeight="28" id="488-um-vtp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="foodar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="0jH-QT-Jk2">
@@ -55,6 +55,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vSR-hM-diC"/>
+                    <connections>
+                        <outlet property="foodarHeader" destination="0jH-QT-Jk2" id="M4i-JM-B2P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dU-iJ-3pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +86,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2r-ld-o8c" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home-7" id="PQY-mW-ims"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwl-EL-3U6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xwl-EL-3U6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

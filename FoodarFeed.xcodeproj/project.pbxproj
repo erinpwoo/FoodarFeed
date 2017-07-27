@@ -12,7 +12,6 @@
 		AF8730071F25A38D00B72F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8730051F25A38D00B72F01 /* Main.storyboard */; };
 		AF8730091F25A38D00B72F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8730081F25A38D00B72F01 /* Assets.xcassets */; };
 		AF87300C1F25A38D00B72F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF87300A1F25A38D00B72F01 /* LaunchScreen.storyboard */; };
-		AFE5C8FB1F2A73D100E8B28D /* FoodarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5C8FA1F2A73D100E8B28D /* FoodarHeader.swift */; };
 		AFE5C9011F2A85BB00E8B28D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5C9001F2A85BB00E8B28D /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		AF8730081F25A38D00B72F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF87300B1F25A38D00B72F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF87300D1F25A38D00B72F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFE5C8FA1F2A73D100E8B28D /* FoodarHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodarHeader.swift; sourceTree = "<group>"; };
 		AFE5C9001F2A85BB00E8B28D /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 				AF8730011F25A38C00B72F01 /* AppDelegate.swift */,
 				AF8730031F25A38C00B72F01 /* FeedViewController.swift */,
 				AF8730051F25A38D00B72F01 /* Main.storyboard */,
-				AFE5C8FA1F2A73D100E8B28D /* FoodarHeader.swift */,
 				AF8730081F25A38D00B72F01 /* Assets.xcassets */,
 				AFE5C9001F2A85BB00E8B28D /* FeedItem.swift */,
 				AF87300A1F25A38D00B72F01 /* LaunchScreen.storyboard */,
@@ -145,7 +142,6 @@
 			files = (
 				AFE5C9011F2A85BB00E8B28D /* FeedItem.swift in Sources */,
 				AF8730041F25A38C00B72F01 /* FeedViewController.swift in Sources */,
-				AFE5C8FB1F2A73D100E8B28D /* FoodarHeader.swift in Sources */,
 				AF8730021F25A38C00B72F01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
