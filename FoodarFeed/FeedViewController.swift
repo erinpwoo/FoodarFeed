@@ -8,8 +8,13 @@
 
 import UIKit
 
-class FeedViewController: UITableViewController {
 
+class FeedTableViewCell: UITableViewCell {
+    
+}
+
+
+class FeedViewController: UITableViewController {
 
     
     override func viewDidLoad() {
@@ -35,22 +40,22 @@ class FeedViewController: UITableViewController {
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "CellItem", for: indexPath)
-        let label = cell.viewWithTag(1000) as! UILabel
+        let photo = cell.viewWithTag(1000) as! UIImageView
         
         if indexPath.row % 5 == 0 {
-            label.text = "Walk the dog"
+            photo.image = UIImage(named: "burger")
         } else if indexPath.row % 5 == 1 {
-            label.text = "Brush my teeth"
+            photo.image = UIImage(named: "pho")
         } else if indexPath.row % 5 == 2 {
-            label.text = "Learn iOS development"
+            photo.image = UIImage(named: "salad")
         } else if indexPath.row % 5 == 3 {
-            label.text = "Soccer practice"
+            photo.image = UIImage(named: "icecream")
         } else if indexPath.row % 5 == 4 {
-            label.text = "Eat ice cream"
+            photo.image = UIImage(named: "sushirrito")
         }
         return cell
+            
     }
-
 
 }
 
