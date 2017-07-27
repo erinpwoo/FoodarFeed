@@ -9,13 +9,14 @@
 import UIKit
 
 
-class FeedTableViewCell: UITableViewCell {
-    
-}
-
-
 class FeedViewController: UITableViewController {
 
+    //repeating array of photos
+    var photoList = [UIImage(named: "burger")!,
+                    UIImage(named: "pho")!,
+                    UIImage(named: "salad")!,
+                    UIImage(named: "icecream")!,
+                    UIImage(named: "sushirrito")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class FeedViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return photoList.count
     }
 
     
@@ -42,7 +43,9 @@ class FeedViewController: UITableViewController {
             withIdentifier: "CellItem", for: indexPath)
         let photo = cell.viewWithTag(1000) as! UIImageView
         
-        if indexPath.row % 5 == 0 {
+        cell.imageView?.image = photoList[indexPath.item]
+        
+        /* if indexPath.row % 5 == 0 {
             photo.image = UIImage(named: "burger")
         } else if indexPath.row % 5 == 1 {
             photo.image = UIImage(named: "pho")
@@ -52,9 +55,9 @@ class FeedViewController: UITableViewController {
             photo.image = UIImage(named: "icecream")
         } else if indexPath.row % 5 == 4 {
             photo.image = UIImage(named: "sushirrito")
-        }
+        } */
+
         return cell
-            
     }
 
 }
