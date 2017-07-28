@@ -13,7 +13,7 @@
         <scene sceneID="iKl-s1-7z2">
             <objects>
                 <tableViewController id="eKr-dL-8yr" userLabel="Feed View Controller" customClass="FeedViewController" customModule="FoodarFeed" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="320" sectionHeaderHeight="28" sectionFooterHeight="28" id="488-um-vtp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="364" sectionHeaderHeight="28" sectionFooterHeight="28" id="488-um-vtp">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,22 +29,22 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellItem" rowHeight="320" id="KxM-oP-nN3">
-                                <rect key="frame" x="0.0" y="66" width="320" height="320"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellItem" rowHeight="364" id="KxM-oP-nN3">
+                                <rect key="frame" x="0.0" y="66" width="320" height="364"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KxM-oP-nN3" id="WWi-KT-hMG">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="364"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-VE-OPo">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                            <rect key="frame" x="0.0" y="50" width="320" height="363.5"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="ZpK-VE-OPo" secondAttribute="trailing" id="0z4-Ej-xD9"/>
-                                        <constraint firstItem="ZpK-VE-OPo" firstAttribute="leading" secondItem="WWi-KT-hMG" secondAttribute="leading" id="8dD-ys-yvR"/>
-                                        <constraint firstItem="ZpK-VE-OPo" firstAttribute="centerY" secondItem="WWi-KT-hMG" secondAttribute="centerY" id="POn-5G-H6T"/>
-                                        <constraint firstItem="ZpK-VE-OPo" firstAttribute="top" secondItem="WWi-KT-hMG" secondAttribute="top" id="rt1-tR-zIp"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZpK-VE-OPo" secondAttribute="trailing" id="43R-Xz-ikK"/>
+                                        <constraint firstItem="ZpK-VE-OPo" firstAttribute="top" secondItem="WWi-KT-hMG" secondAttribute="top" constant="50" id="B7Y-2Y-hhV"/>
+                                        <constraint firstItem="ZpK-VE-OPo" firstAttribute="leading" secondItem="WWi-KT-hMG" secondAttribute="leading" id="ams-8U-5AS"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZpK-VE-OPo" secondAttribute="bottom" constant="-50" id="vGC-Yh-EPc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -69,6 +69,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NmS-c0-DQq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3Tq-Jh-lfF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
